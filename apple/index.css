@@ -1,0 +1,170 @@
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 400;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+  }
+
+  * {
+    margin: 0;
+  }
+
+body {
+    display: grid;
+    margin: 0;
+    background-color: #1D1D1F;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 3rem 1fr 1fr;
+    font-family: 'San Francisco', sans-serif;
+}
+header {
+    margin: 0;
+}
+
+header.logo {
+        margin: 7px;
+        height: 3em;
+}
+
+.lista {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    margin: 0;
+}
+ 
+ul li {
+    display: flex;
+    flex-grow: 1;
+    color: azure;
+    align-items: center;
+}
+
+ul li .search-icon {
+    height: 1em;
+}
+
+ul li .bag {
+    height: 3em;
+}
+
+.logo {
+    margin: 7px;
+    height: 3em;
+}
+
+ul li a {
+    display: block;
+    color: azure;
+    text-decoration: none;
+    font-size: .7em;
+}
+
+
+
+article.iphone-13-pro {
+    justify-content: center;
+    background-color: rgb(241, 240, 240);
+    position: relative;
+    height: 100vh;
+    background-image: url(assets/iphone_13_pro_hero__b833cu78x5f6_medium.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 20em;
+ 
+}
+
+article.iphone-13 {
+    justify-content: center;
+    background-color: rgb(51, 38, 62);
+    position: relative;
+    height: 100vh;
+    background-image: url(assets/iphone_13_hero__fy4bx6w0wfma_medium.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+section.text-iphone-13-pro {
+    text-align: center;
+    padding-top: 6%;
+    color: rgb(34, 34, 34);
+}
+
+section.text-iphone-13 {
+    text-align: center;
+    padding-top: 6%;
+    color: rgb(244, 244, 244);
+}
+
+/* .iphone-13-pro img {
+    display: block;
+    height: 60%;
+    margin: 0 auto;
+    align-self: end;
+} */
+
+
+article h1 {
+    display: block;
+    font-size: 3em;
+}
+
+article h2 {
+    display: none;
+    padding-top: 1.5rem;
+    margin: 0;
+}
+
+section.links-container {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+article a {
+    color: rgb(78, 78, 232);
+    font-size: 1em;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+a.link-color-2 {
+    color: rgb(203, 161, 243);
+}
+
+@media (max-width: 600px){
+
+    body {
+        display: grid;
+        margin: 0;
+        background-color: #1D1D1F;
+        grid-template-columns: 1fr
+        grid-template-rows: 3rem 1fr 1fr;
+        font-family: 'San Francisco', sans-serif;
+    }
+
+    ul li {
+        justify-content: end;
+    }
+
+    ul.lista {
+        padding: 0;
+    }
+
+    ul li .bag {
+        height: 3em;
+        padding-right: 2rem;
+    }
+    
+    .logo {
+        margin: 7px;
+        height: 3em;
+        padding-right: 16rem;
+    }
+
+ul li.ocultar-en-mobile {
+    display: none;
+}
+}
+
+
+
